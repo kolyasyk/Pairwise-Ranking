@@ -16,7 +16,8 @@ def pairwise_comparison(items):
     results = {item: 0 for item in items}
 
     # Loop through each pair, display them, and record user's choice
-    for pair in pairs:
+    for pair_number, pair in enumerate(pairs):
+        print(f" --- {pair_number + 1}/{len(pairs)} --- \n")
         winner = compare_pair(pair)
         results[winner] += 1
         print(f"You preferred {winner}.\n")
@@ -36,7 +37,7 @@ def load_list(list_name: str) -> [str]:
 
 
 def main():
-    list_name: str = "Intelligence"
+    list_name: str = "Achievement"
     # list_name: str = "Fruit"
     options: [str] = load_list(list_name=list_name)
     pairwise_comparison(options)

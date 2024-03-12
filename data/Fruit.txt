@@ -1,4 +1,0 @@
-Strawberry
-Blueberry
-Banana
--Apple
