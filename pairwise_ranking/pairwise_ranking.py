@@ -37,7 +37,7 @@ def load_list(list_name: str) -> [str]:
 
 
 def main():
-    list_name: str = "Achievement"
+    list_name: str = "Order"
     # list_name: str = "Fruit"
     options: [str] = load_list(list_name=list_name)
     pairwise_comparison(options)
